@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -25,8 +25,9 @@ export default function HeroSection() {
                 </span>
               </h1>
               <p className="max-w-[600px] text-zinc-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Create autonomous AI systems that understand context, make decisions, and take meaningful actions to
-                solve complex problems.
+                Create autonomous AI systems that understand context, make
+                decisions, and take meaningful actions to solve complex
+                problems.
               </p>
             </div>
             <div className="flex flex-col gap-4 min-[400px]:flex-row">
@@ -44,20 +45,11 @@ export default function HeroSection() {
                 View Documentation
               </Button>
             </div>
-            <div className="flex items-center gap-4 text-sm text-zinc-400">
-              <div className="flex -space-x-2">
-                <div className="inline-block h-8 w-8 rounded-full border-2 border-black bg-zinc-800"></div>
-                <div className="inline-block h-8 w-8 rounded-full border-2 border-black bg-zinc-800"></div>
-                <div className="inline-block h-8 w-8 rounded-full border-2 border-black bg-zinc-800"></div>
-                <div className="inline-block h-8 w-8 rounded-full border-2 border-black bg-zinc-800"></div>
-              </div>
-              <div>Powering 10,000+ intelligent applications</div>
-            </div>
           </div>
           <div className="relative flex items-center justify-center lg:justify-end">
             <div className="relative h-[400px] w-[400px] sm:h-[500px] sm:w-[500px]">
               <Image
-                src="/placeholder.svg?height=500&width=500"
+                src="/hero.png?height=500&width=500"
                 width={500}
                 height={500}
                 alt="AI Agent Visualization"
@@ -79,6 +71,5 @@ export default function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

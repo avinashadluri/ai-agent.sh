@@ -1,18 +1,25 @@
-import type React from "react"
-import { Badge } from "@/components/ui/badge"
-import { Brain, Share2, Shield, Sparkles, UserCheck, Zap } from "lucide-react"
-import Image from "next/image"
+import type React from "react";
+import { Badge } from "@/components/ui/badge";
+import { Brain, Share2, Shield, Sparkles, UserCheck, Zap } from "lucide-react";
+import Image from "next/image";
 
 interface FutureTrendProps {
-  icon: React.ReactNode
-  title: string
-  description: string
-  className?: string
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  className?: string;
 }
 
-function FutureTrend({ icon, title, description, className }: FutureTrendProps) {
+function FutureTrend({
+  icon,
+  title,
+  description,
+  className,
+}: FutureTrendProps) {
   return (
-    <div className={`rounded-lg border border-zinc-800 bg-zinc-950/50 p-6 backdrop-blur-sm ${className}`}>
+    <div
+      className={`rounded-lg border border-zinc-800 bg-zinc-950/50 p-6 backdrop-blur-sm ${className}`}
+    >
       <div className="flex items-start gap-4">
         <div className="mt-1">{icon}</div>
         <div className="space-y-2">
@@ -21,7 +28,7 @@ function FutureTrend({ icon, title, description, className }: FutureTrendProps) 
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default function FutureSection() {
@@ -41,7 +48,8 @@ export default function FutureSection() {
             The Future of AI Agents
           </h2>
           <p className="max-w-[700px] text-zinc-400 md:text-xl/relaxed">
-            Explore emerging trends and possibilities for the next generation of AI agents.
+            Explore emerging trends and possibilities for the next generation of
+            AI agents.
           </p>
         </div>
 
@@ -86,41 +94,51 @@ export default function FutureSection() {
         <div className="mt-16 rounded-xl border border-zinc-800 bg-zinc-950/50 backdrop-blur-sm overflow-hidden">
           <div className="grid lg:grid-cols-2">
             <div className="p-8 lg:p-12 flex flex-col justify-center space-y-6">
-              <Badge className="w-fit bg-blue-500/10 text-blue-500 hover:bg-blue-500/20">Research Spotlight</Badge>
+              <Badge className="w-fit bg-blue-500/10 text-blue-500 hover:bg-blue-500/20">
+                Research Spotlight
+              </Badge>
               <h3 className="text-2xl font-bold tracking-tight text-white md:text-3xl">
                 Agentic AI: The Next Evolution
               </h3>
               <p className="text-zinc-400">
-                Recent research suggests agentic AI systems could fundamentally transform how we interact with
-                technology, enabling more natural, goal-oriented collaboration between humans and AI.
+                Recent research suggests agentic AI systems could fundamentally
+                transform how we interact with technology, enabling more
+                natural, goal-oriented collaboration between humans and AI.
               </p>
               <div className="space-y-2">
                 <div className="flex gap-2">
                   <div className="h-1.5 w-1.5 mt-2 rounded-full bg-blue-500"></div>
                   <p className="text-sm text-zinc-400">
-                    <span className="font-medium text-white">Autonomous Problem Solving:</span> Agents that can
-                    decompose complex tasks without human guidance
+                    <span className="font-medium text-white">
+                      Autonomous Problem Solving:
+                    </span>{" "}
+                    Agents that can decompose complex tasks without human
+                    guidance
                   </p>
                 </div>
                 <div className="flex gap-2">
                   <div className="h-1.5 w-1.5 mt-2 rounded-full bg-blue-500"></div>
                   <p className="text-sm text-zinc-400">
-                    <span className="font-medium text-white">Persistent Learning:</span> Systems that improve through
-                    experience and feedback
+                    <span className="font-medium text-white">
+                      Persistent Learning:
+                    </span>{" "}
+                    Systems that improve through experience and feedback
                   </p>
                 </div>
                 <div className="flex gap-2">
                   <div className="h-1.5 w-1.5 mt-2 rounded-full bg-blue-500"></div>
                   <p className="text-sm text-zinc-400">
-                    <span className="font-medium text-white">Tool Creation:</span> Agents that develop their own tools
-                    to solve new challenges
+                    <span className="font-medium text-white">
+                      Tool Creation:
+                    </span>{" "}
+                    Agents that develop their own tools to solve new challenges
                   </p>
                 </div>
               </div>
             </div>
             <div className="relative h-64 lg:h-auto">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/robo6.png?height=400&width=600"
                 fill
                 alt="Futuristic AI Agent Visualization"
                 className="object-cover"
@@ -130,6 +148,5 @@ export default function FutureSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
